@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/nav_graph"
+    app:startDestination="@id/statsFragment">
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.example.expresstask.fragments.StatsFragment"
+        android:label="StatsFragment" >
+        <action
+            android:id="@+id/action_statsFragment_to_operationsDetails24"
+            app:destination="@id/operationsDetails2" />
+    </fragment>
+    <fragment
+        android:id="@+id/operationsDetails2"
+        android:name="com.example.expresstask.fragments.OperationsDetails"
+        android:label="OperationsDetails" />
+</navigation>
